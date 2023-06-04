@@ -3,7 +3,10 @@ const text = circle.dataset.text;
 const characters = text.split("");
 
 const deltaAngle = 360 / characters.length;
-const distanceFromCenter = 256;
+let distanceFromCenter = 256;
+if (window.innerWidth < 1024) {
+  distanceFromCenter = 156;
+}
 
 characters.forEach((character, index) => {
   const span = document.createElement("span");
@@ -20,7 +23,7 @@ const text2 = circle2.dataset.text;
 const characters2 = text2.split("");
 
 const deltaAngle2 = 360 / characters2.length;
-const distanceFromCenter2 = 256;
+let distanceFromCenter2 = 256;
 
 characters2.forEach((character, index) => {
   const span = document.createElement("span");

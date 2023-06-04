@@ -16,15 +16,16 @@
 
 <body class="bg-zinc-800">
   <!-- Page Content -->
-  <div class="slide h-screen grid grid-cols-1 custom:grid-cols-2 gap-4 pt-16">
-    <div class="ml-5">
-      <p class="font-hk text-lime text-7xl lg:text-9xl custom:text-title font-extrabold mb-14 lg:mb-32">
+  <div class="xs:snap-start h-screen grid grid-cols-1 custom:grid-cols-2 gap-4 pt-16">
+    <div class="ml-10 custom:ml-10">
+      <p class="font-hk text-lime text-7xl custom:text-title font-extrabold mb-14">
         Qubitlink Solution</p>
-      <p class="font-hk text-lime text-3xl lg:text-5xl custom:text-6xl lg:pl-5 mb-8">
+      <p class="font-hk text-lime text-3xl custom:text-6xl custom:pl-5 mb-4 custom:mb-8">
         Innovate. Connect. Transform.</p>
-      <button onclick="location.href='mailto:info@qubitlink.io';" class="rounded lg:ml-5
-        px-4 lg:px-6 custom:px-10
-        py-2 lg:py-4 relative font-hk
+      <button onclick="location.href='mailto:info@qubitlink.io';" class="rounded 
+      custom:ml-5
+        px-4 custom:px-10
+        py-2 relative font-hk
         border-2 border-lime bg-transparent
         text-lime text-xl custom:text-2xl
         transition-colors before:absolute 
@@ -33,29 +34,29 @@
         before:scale-x-0 before:bg-lime before:transition-transform 
         before:duration-300 hover:border-black hover:text-black before:hover:scale-x-100">Contact Us</button>
     </div>
-    <div class="lg:hidden">
+    <div>
       <img class="selection:bg-lime w-full h-auto object-contain p-10" src="img/lime logo.png" alt="">
     </div>
   </div>
 
   <!-- Introduction -->
-  <div class="slide h-screen bg-blue-600 grid grid-cols-2 gap-4">
-    <div class="ml-5 pt-10">
-      <p class="font-hk text-lime text-7xl lg:text-9xl custom:text-title font-extrabold">
+  <div class="xs:snap-start h-auto xs:h-screen bg-blue-600 xs:grid xs:grid-cols-2 px-10">
+    <div class="pt-10">
+      <p class="font-hk text-lime text-7xl xs:text-5xl custom:text-title font-extrabold">
         How We Work
       </p>
-      <div class="circle-parent h-1/2 mr-2.5">
+      <div class="hidden xs:block circle-parent h-1/2 custom:mr-2.5">
         <div id='circle' class="selection:bg-lime selection:text-black" data-text="DISCOVER DESIGN DEVELOP&nbsp;"></div>
       </div>
     </div>
     <!-- Discover -->
-    <div class="grid grid-rows-3 gap-10 py-16 mr-5">
+    <div class="pb-10 xs:overflow-y-hidden xs:grid xs:grid-rows-3 xs:gap-10 xs:py-16 custom:pr-10">
       <div class="flex justify-center">
         <div>
-          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 pl-5">
+          <p class="font-hk text-lime underline text-3xl custom:text-6xl pt-5 xs:pl-5">
             Discover
           </p>
-          <p class="font-hk text-lime text-2xl pt-5 px-5">
+          <p class="font-hk text-lime text-2xl pt-5 xs:px-5">
             Our objective is to extract the underlying core elements of your idea, ensuring a comprehensive
             understanding that serves as the foundation for further strategic planning and implementation.
           </p>
@@ -64,10 +65,10 @@
       <!-- Design -->
       <div class="flex justify-center">
         <div>
-          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 pl-5">
+          <p class="font-hk text-lime underline text-3xl custom:text-6xl pt-5 xs:pl-5">
             Design
           </p>
-          <p class="font-hk text-lime text-2xl pt-5 px-5">
+          <p class="font-hk text-lime text-2xl pt-5 xs:px-5">
             Through a strategic framework, we aim to create a user experience that not only meets your business
             objectives but also fulfills the expectations and requirements of your users.
           </p>
@@ -76,10 +77,10 @@
       <!-- Develop -->
       <div class="flex justify-center">
         <div>
-          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 pl-5">
+          <p class="font-hk text-lime underline text-3xl custom:text-6xl pt-5 xs:pl-5">
             Develop
           </p>
-          <p class="font-hk text-lime text-2xl pt-5 px-5">
+          <p class="font-hk text-lime text-2xl pt-5 xs:px-5">
             Develop a final product that meets the desired functionality, aesthetic appeal, an intuitive and effortless
             interface, and seamless user experience envisioned.
           </p>
@@ -88,39 +89,37 @@
     </div>
   </div>
 
-  <div class="slide h-screen bg-purple-600 grid grid-rows-2 gap-4">
-    <div class="grid grid-cols-2">
-      <div class="ml-5 pt-10">
-        <p class="font-hk text-lime text-7xl lg:text-9xl custom:text-title font-extrabold">
-          What We Offer
-        </p>
-      </div>
-      <div class="circle-parent h-[40vh] mr-2.5">
+  <div class="xs:snap-start h-auto xs:h-screen bg-purple-600 xs:grid xs:grid-rows-2 gap-4 px-10">
+    <div class="xs:grid xs:grid-cols-2 pt-10">
+      <p class="font-hk text-lime text-7xl xs:text-5xl custom:text-title font-extrabold">
+        What We Offer
+      </p>
+      <div class="hidden xs:block circle-parent xs:h-[40vh] xs:mr-2.5">
         <div id='circle-2' class="selection:bg-lime selection:text-black" data-text="IOS ANDROID WEBAPP&nbsp;">
         </div>
       </div>
     </div>
 
     <!-- Cross-Platform Apps -->
-    <div class="grid grid-cols-3">
-      <div class="flex justify-center my-10">
+    <div class="pb-10 xs:mx-10 xs:grid xs:grid-cols-3 gap-4">
+      <div class="flex justify-center xs:my-10">
         <div>
-          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 pl-5">
+          <p class="font-hk text-lime underline text-3xl custom:text-6xl pt-5 custom:pl-5">
             Cross-platform Application
           </p>
-          <p class="font-hk text-lime text-2xl pt-5 px-5">
+          <p class="font-hk text-lime text-2xl pt-5 custom:px-5">
             Cross-platform Application runs seamlessly on various devices and operating
             systems, enabling businesses to expand their reach and enhance user experiences.
           </p>
         </div>
       </div>
 
-      <div class="flex justify-center my-10">
+      <div class="flex justify-center xs:my-10">
         <div>
-          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 pl-5">
+          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 custom:pl-5">
             Mobile App Consulting
           </p>
-          <p class="font-hk text-lime text-2xl pt-5 px-5">
+          <p class="font-hk text-lime text-2xl pt-5 custom:px-5">
             Provide mobile app consulting services, offering strategic guidance and technical expertise to help
             businesses
             navigate the mobile app landscape and maximize the potential of their mobile applications.
@@ -128,12 +127,12 @@
         </div>
       </div>
 
-      <div class="flex justify-center my-10">
+      <div class="flex justify-center xs:my-10">
         <div>
-          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 pl-5">
+          <p class="font-hk text-lime underline text-3xl lg:text-5xl custom:text-6xl pt-5 custom:pl-5">
             Progressive web apps (PWAs)
           </p>
-          <p class="font-hk text-lime text-2xl pt-5 px-5">
+          <p class="font-hk text-lime text-2xl pt-5 custom:px-5">
             Web applications that leverage modern web technologies to deliver an app-like experience to users across
             different
             devices and platforms.
@@ -143,7 +142,7 @@
     </div>
   </div>
 
-  <div class="slide h-5">
+  <div class="xs:snap-start h-5">
     <p class="text-xs text-lime flex justify-center my-2">
       2022 - 2023 ©Qubitlink Solution (JR0132234-P)
     </p>

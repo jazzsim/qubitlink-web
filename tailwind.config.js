@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html"],
   theme: {
     screens: {
-      'xs': '361px',
+      'xs': '450px',
+      ...defaultTheme.screens,
     },
     extend: {
       fontFamily: {
