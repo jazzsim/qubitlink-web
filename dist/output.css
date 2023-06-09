@@ -1001,6 +1001,14 @@ p::selection {
     margin-right: 0.625rem;
   }
 
+  .custom\:h-auto {
+    height: auto;
+  }
+
+  .custom\:w-full {
+    width: 100%;
+  }
+
   .custom\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
