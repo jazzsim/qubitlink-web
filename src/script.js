@@ -4,9 +4,6 @@ const characters = text.split("");
 
 const deltaAngle = 360 / characters.length;
 let distanceFromCenter = 256;
-if (window.innerWidth < 1024) {
-  distanceFromCenter = 156;
-}
 
 characters.forEach((character, index) => {
   const span = document.createElement("span");
